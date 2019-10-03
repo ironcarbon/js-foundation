@@ -34,3 +34,11 @@ Compiler: DOES NOT TRANSLATE ON THE FLY.  Compilers work a head of time to creat
 ![JS Engine 3](images/interpreter-compiler-2.png)
 
 ![JS Engine 4](images/interpreter-compiler-3.png)
+* Interpreters start translating their first line and runs the code for us. An interpreter is a natural fit for something like JS. JS originally was created for the browser.
+* Compiler takes little bit longer to start up because it has to go to compilation step at the beginning. Go through our code, understand it and spit it out into another language. Compiler does not need to repeat the translation for each pass through so the edits that compilers do are called OPTIMIZATION
+
+
+* BABEL is a JS compiler that makes your modern JS code and returns browser compatible JS(older JS)
+* TYPESCRIPT is a superset of a JS that compiles down to JS.
+* Both of these do what compilers do: TAKE ONE LANGUAGE AND CONVERT INTO A DIFFERENT ONE!
+
