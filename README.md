@@ -60,3 +60,9 @@ Inline caching  is done by compiler
 1. Always instantiate your object properties in the same order so that hidden classes, and subsequently optimized code, can be shared.
 2. Adding properties to an object after instantiation will force a hidden class change and slow down any methods that were optimized for the previous hidden class. Instead, assign all of an object’s properties in its constructor.
 3. Code that executes the same method repeatedly will run faster than code that executes many different methods only once (due to inline caching).
+
+
+# WebAssembly
+WebAssembly have the standard binary executable format.
+WebAssembly is a way to take code in any programming language and run it within a web browser.
+- It runs really really fast on the browser instead of going through the entire JS engine process. Might be game changer in the future.
