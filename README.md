@@ -42,3 +42,21 @@ Compiler: DOES NOT TRANSLATE ON THE FLY.  Compilers work a head of time to creat
 * TYPESCRIPT is a superset of a JS that compiles down to JS.
 * Both of these do what compilers do: TAKE ONE LANGUAGE AND CONVERT INTO A DIFFERENT ONE!
 
+
+WRITING OPTIMIZED CODE/ EFFICIENT CODE:
+* We want to write code in a way that helps compiler make the optimization.
+* Paramater restructuring is best way to not use arguments in the function which might deoptimized code!
+* For in loop could be problematic for iterating objects so USE Object.keys()
+* delete keyword in JS could be problematic.
+* eval()
+* With 
+
+Hidden classes
+Inline caching  is done by compiler
+
+
+
+# Optimization takeaways
+1. Always instantiate your object properties in the same order so that hidden classes, and subsequently optimized code, can be shared.
+2. Adding properties to an object after instantiation will force a hidden class change and slow down any methods that were optimized for the previous hidden class. Instead, assign all of an object’s properties in its constructor.
+3. Code that executes the same method repeatedly will run faster than code that executes many different methods only once (due to inline caching).
