@@ -30,3 +30,7 @@ Compiler: DOES NOT TRANSLATE ON THE FLY.  Compilers work a head of time to creat
 * It basically takes the WHOLE CODE and try to understand what code does. Then, it takes the program in JS or ay type of language and WRITE A NEW PROGRAM IN A NEW LANGUAGE that computer can understand.
 
 ![JS Engine 2](images/interpreter-compiler-1.png)
+
+![JS Engine 3](images/interpreter-compiler-2.png)
+
+![JS Engine 4](images/interpreter-compiler-3.png)
