@@ -17,3 +17,16 @@
 * JS engine can be built by anybody but it is a lot of work. V8 engine which was built by Google is the fastest and is written in C++ which is low level programming language.
 * If everybody creates its own JS, it would be a total chaos which is why ECMAScript was created. It defines the standard of JS engines and how it should work. ECMAScript is a governing body of a JS that essentially decides how the language should be standardized.
 * Once we understand JS engine principles and why it’s built the way, we will able to write OPTIMIZED CODE.
+
+# Interpreters and Compilers
+
+* There are 2 ways to run JS using an interpreter or a compiler.
+
+* In programming, there are generally 2 ways of translating to machine language or something that our computers can understand. It applies to most programming languages like JS, Python, Java, C++. They all use some of these concepts.
+
+Interpreter: Translation happens LINE BY LINE on the fly.
+
+Compiler: DOES NOT TRANSLATE ON THE FLY.  Compilers work a head of time to create a translation of what code we have written and compiles down to usually a language that can be understood by machines.
+* It basically takes the WHOLE CODE and try to understand what code does. Then, it takes the program in JS or ay type of language and WRITE A NEW PROGRAM IN A NEW LANGUAGE that computer can understand.
+
+![JS Engine 2](images/interpreter-compiler-1.png)
