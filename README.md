@@ -87,3 +87,9 @@ Maximum stack size exceeded warning pops up instead of crashing the browser.
 2. A lot of function is nested each other
 
 
+# Garbage Collection: 
+JS is a garbage collected language that means when js allocates memory like within a function we create an object and that object gets stored somewhere in memory heap automatically with JS when we finish calling the function and let’s say we don’t need that object anymore. It is going to clean it up for us.
+
+JS automatically frees up the memory that we no longer use and will collect our garbage.
+
+* In JS, garbage collector freeze memory on the heap and prevents memory leaks that is when the memory gets too big until it reaches maximum size. (Mark and Sweep Algorithm)
