@@ -79,3 +79,11 @@ Variables are stored in memory heap directly.
 ![Call Stack and Memory Heap 1](images/callstack-memoryheap-1.png)
 
 ![Call Stack and Memory Heap 2](images/callstack-memoryheap-2.png)
+
+
+# Stack Overflow: 
+Maximum stack size exceeded warning pops up instead of crashing the browser. 
+1. Recursion
+2. A lot of function is nested each other
+
+
