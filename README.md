@@ -74,3 +74,8 @@ WebAssembly is a way to take code in any programming language and run it within 
 * We use memory heap to actually point to different variables and objects that we store so that we know where to look.
 * Call Stack stores only functions which are pushed into it.
 Variables are stored in memory heap directly.
+
+
+![Call Stack and Memory Heap 1](images/callstack-memoryheap-1.png)
+
+![Call Stack and Memory Heap 2](images/callstack-memoryheap-2.png)
