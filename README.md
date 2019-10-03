@@ -66,3 +66,11 @@ Inline caching  is done by compiler
 WebAssembly have the standard binary executable format.
 WebAssembly is a way to take code in any programming language and run it within a web browser.
 - It runs really really fast on the browser instead of going through the entire JS engine process. Might be game changer in the future.
+
+# Call Stack and Memory Heap
+* JS Engine basically reads our code and executes it.
+* Call Stack is a region in memory which operates in FIRST IN LAST OUT mode.
+* Call stacks stores functions and variables as your code executes at each entry state of the stack also called stack frame which allows us to know where we are in the code and it runs in FIRST IN LAST OUT mode.
+* We use memory heap to actually point to different variables and objects that we store so that we know where to look.
+* Call Stack stores only functions which are pushed into it.
+Variables are stored in memory heap directly.
