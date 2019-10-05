@@ -40,3 +40,4 @@ function count() {
     console.log('count', i)
 }
 count()
+//  ReferenceError: i is not defined
