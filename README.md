@@ -93,3 +93,32 @@ JS is a garbage collected language that means when js allocates memory like with
 JS automatically frees up the memory that we no longer use and will collect our garbage.
 
 * In JS, garbage collector freeze memory on the heap and prevents memory leaks that is when the memory gets too big until it reaches maximum size. (Mark and Sweep Algorithm)
+
+
+
+
+
+
+
+## SUMMARY
+
+# this
+* 'this' is the object that function is property of
+*  Methods are functions that are inside of objects so the property methods can be accessed with dot notation.
+* Whatever to the left of the dot which is the object that the function is a property of.
+
+2 main benefits of using 'this'
+ 1. gives methods access to their object
+ 2. execute same code for multiple objects
+
+
+ * this ==> It matters HOW THE FUNCTION WAS CALLED not where it is written like lexical scope.
+
+* Everything in JS is actually lexical scoped how you write, it determines what we have available except THIS keyword
+
+* 'this' keyword is DYNAMICALLY SCOPED so HOW THE FUNCTION WAS CALLED is the matter!
+
+*
+    How we can solve this?
+
+    Arrow functions are LEXICALLY bound so they have lexical behaviour.
