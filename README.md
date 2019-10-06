@@ -98,7 +98,58 @@ JS automatically frees up the memory that we no longer use and will collect our 
 
 
 
+## Types in JS
 
+* In programming, there are 2 types of languages: dynamically and statically typed languages.
+
+# JS Types
+1. Numbers
+2. Boolean
+3. String
+4. Undefined    ==> absence of definition. It is used as the default value when the JS engine initialize our variables.
+5. Null     ==> absence of value
+6. Symbol('hello')   => created with ES6, mostly use for object properties so that object property is unique.
+7. {}
+
+* typeof operator in JS tells us the type of the item.
+typeof true
+typeof null
+typeof {}
+
+* Arrays and Functions are OBJECT!
+* We can add a property to a function just like we can do with an object with a dot notation.
+
+function a(){
+    return 'hello'
+}
+
+a.name = 'ipek'
+console.log(a.name)
+
+* In JS, there are primitive and non primitive types.
+
+Primitive Type: It is a data that only represents a single value so that means primitive type directly contains the value of that type.
+
+Built-in objects with come with JS. Primitive types can create a wrapper object around this primitive value.
+
+true.toString()   // 'true'
+* Primitive types are always primitives but to chain different methods, they can create a wrapper object.
+
+* Arrays are objects in JS. typeof []  // object
+- To test if that is array:
+ Array.isArray([1,2,3])  //true
+ Array.isArray({1,2,3})  //false
+
+ # Pass By Reference vs Pass By Value
+ * Primitive types are immutable. We can't really change them. In order to change them, we need to completely remove the primitive type.  =>Pass by value: copy the value and create that value somewhere else in memory.
+
+ * Objects in JS are stored in memory and are passed by reference which means that we don't copy the values like we did with primitive types.
+
+* Having an object helps saving space in memory. Not copying and cloning the object.
+
+concat() method
+
+* Each object gets passed by reference.
 
 ## SUMMARY
 
