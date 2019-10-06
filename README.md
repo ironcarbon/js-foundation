@@ -114,6 +114,9 @@ JS automatically frees up the memory that we no longer use and will collect our 
 & Current execution context.
 * If JS engine can't find a variable in local(like function's execution context), it will look to the nearest parent execution context for the variable. That lookup process will continue all the way up, until the engine reaches the global execution context. In that case, if the global execution context does not have the variable, then it will throw a ReferenceError, because that variable does not exist anywhere up the scope chain or the execution context chain.
 
+# closure scope
+
+
 # this
 * 'this' is the object that function is property of
 *  Methods are functions that are inside of objects so the property methods can be accessed with dot notation.
