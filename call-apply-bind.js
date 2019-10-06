@@ -63,3 +63,13 @@ healArcher()
 
 //   bind allows us to store the 'this' keyword for later to use.
 //   bind is like band-aid to fix the idea of dynamically scoped this keyword that ruins our entire lexical scoping discussion.
+
+
+//example
+const array = [1, 2, 3]
+
+function getMaxNumber(arr) {
+    return Math.max.apply(null, arr)
+}
+
+getMaxNumber(array)  //should return 3
