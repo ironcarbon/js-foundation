@@ -65,7 +65,7 @@ healArcher()
 //   bind is like band-aid to fix the idea of dynamically scoped this keyword that ruins our entire lexical scoping discussion.
 
 
-//example
+//example for call and apply
 const array = [1, 2, 3]
 
 function getMaxNumber(arr) {
@@ -73,3 +73,20 @@ function getMaxNumber(arr) {
 }
 
 getMaxNumber(array)  //should return 3
+
+//example for this
+
+var b = {
+    name: 'jay',
+    say() { console.log(this) }
+}
+
+var c = {
+    name: 'jay',
+    say() { return function () { console.log(this) } }
+}
+
+var d = {
+    name: 'jay',
+    say() { return () => console.log(this) }
+}

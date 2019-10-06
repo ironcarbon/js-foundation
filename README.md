@@ -102,6 +102,18 @@ JS automatically frees up the memory that we no longer use and will collect our 
 
 ## SUMMARY
 
+# hoisting
+
+* Any variable declaration are assigned a default value of undefined during the creation phase of execution context and this term is hoisting.
+
+* Function Execution Context: It is created whenever function is invoked.
+
+# scope
+
+* Where variables are accessible.
+& Current execution context.
+* If JS engine can't find a variable in local(like function's execution context), it will look to the nearest parent execution context for the variable. That lookup process will continue all the way up, until the engine reaches the global execution context. In that case, if the global execution context does not have the variable, then it will throw a ReferenceError, because that variable does not exist anywhere up the scope chain or the execution context chain.
+
 # this
 * 'this' is the object that function is property of
 *  Methods are functions that are inside of objects so the property methods can be accessed with dot notation.
