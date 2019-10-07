@@ -151,6 +151,24 @@ concat() method
 
 * Each object gets passed by reference.
 
+# Type Coercion
+* In JS, type coercion happens when you use DOUBLE EQUAL. Double equal simply means compare two values and if they have different types try to coerce one into the same type.
+* Three equals means compare two values but don't try to coerce the values.
+* Type coercion does not happen just with the equals sign. You can also do an IF STATEMENT.
+-0 === +0   //true
+Object.is(-0,+0)  //false
+
+* Prefer using three equals because type coercion in JS could be tricky.
+* Always use the same types for operations.
+* NaN === NaN returns always false because in this comparison, they are two different NaN objects which point to two different references in memory.
+
+* Empty array is considered as false because length of the parameter is 0.
+* The Object.is() method determines whether two values are the same value.
+
+
+
+
+
 ## SUMMARY
 
 # hoisting
