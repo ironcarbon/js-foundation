@@ -19,7 +19,7 @@ const obj1 = {
         return 2;
     }
 }
-obj.two()   // Calling the function as a method
+obj1.two()   // Calling the function as a method
 
 //3: call
 
@@ -48,9 +48,9 @@ greeting.user = 'Ipek'
 
 //Functions also have PROPERTIES like objects.(call,apply,bind)
 
-const obj = {
+// const obj = {
 
-}
+// }
 // obj.call() =======> DOES NOT WORK!
 //Only functions have that features. Functions are CALLABLE OBJECTS!!!
 // *** So, we can pass functions around like objects like things contain DATA.
