@@ -167,9 +167,25 @@ Object.is(-0,+0)  //false
 
 
 
+## 2 Pillars: Closures and Prototypal Inheritance
+# Functions
+* Functions in JS are also object. 
+When we invoke a function, we get 2 parameters automatically. 'this' + 'arguments' (array like object)
+* Because of the 'arguments' object, we can't technically have any parameters defined for a function.?
+* When we define our functions and the compiler looks at our code lexically. It determines what variables are available for us in our variable environment.
+
+* Closures are also called lexical scoping(staticlly scoped). Lexical means where it is written, scoping is what variable we have access to.
+
+* Functions returns functions  => closure
 
 
 ## SUMMARY
+
+* Memory heap gets cleaned up by garbage collection.
+
+* Variables can not be overwritten fully. When you defined variable, it has already gotten undefined in global execution context but functions are different. Functions are fully hoisted.
+
+
 
 # hoisting
 
