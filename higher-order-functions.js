@@ -83,3 +83,12 @@ function letPerson(person, fnc) { // tell it what data to use + function
 }
 
 letPerson({ level: 'admin', name: 'Sally' }, authenticate)
+
+
+//example
+const multiplyBy = function (num1, num2) {
+    return num1 * num2
+}
+
+multiplyTwo
+multiplyTen
