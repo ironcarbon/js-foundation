@@ -174,6 +174,13 @@ When we invoke a function, we get 2 parameters automatically. 'this' + 'argument
 * Because of the 'arguments' object, we can't technically have any parameters defined for a function.?
 * When we define our functions and the compiler looks at our code lexically. It determines what variables are available for us in our variable environment.
 
+# Higher Order Functions
+* Simply a function that can take function as an argument or function returns another function.
+Why useful?
+
+
+# Closures
+
 * Closures are also called lexical scoping(staticlly scoped). Lexical means where it is written, scoping is what variable we have access to.
 
 * Functions returns functions  => closure
