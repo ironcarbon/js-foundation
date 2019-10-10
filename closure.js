@@ -63,5 +63,36 @@ callMeMaybe()
 // it does not matter where we define this variable. It is not about hoisting. It is about closure. When setTimeout was sent to web api, varible will be in call stack and see variable reference could be necessary when setTimeout came back after call back queue. So, it will keep the variable information.
 
 
-//Memory Efficient
-//Encapsulation     ==> Hiding an information that is unnecessary
+
+// 1. Memory Efficient
+function heavyDuty(index) {
+    const bigArray = new Array(7000).fill(':)')
+    console.log('created')
+    return bigArray[index];
+}
+
+heavyDuty(200)
+heavyDuty(200)
+heavyDuty(200)
+//Everytime we are creating a big array and adding data to our memory which we have limited memory and return it because there is no REFERECING. (Creating and it destroys, creating and it destroys)
+
+//DON'T POLLUTE THE GLOBAL SCOPE!!
+
+const getHeavyDuty = heavyDuty2();
+getHeavyDuty(200)
+getHeavyDuty(200)
+getHeavyDuty(200)
+
+function heavyDuty2() {
+    const bigArray = new Array(7000).fill(':)')
+    console.log('created Again!')
+    return function (index) {
+        return bigArray[index];
+    }
+}
+
+  //heavyDuty2()(200);
+
+
+
+//  2. Encapsulation     ==> Hiding an information that is unnecessary
