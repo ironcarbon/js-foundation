@@ -91,8 +91,26 @@ function heavyDuty2() {
     }
 }
 
-  //heavyDuty2()(200);
+//heavyDuty2()(200);
 
 
 
-//  2. Encapsulation     ==> Hiding an information that is unnecessary
+//  2. Encapsulation     ==> Hiding an information that is unnecessary to be seen by the outside world. Some data should not be exposed the idea of encapsulation.
+
+const makeNuclearButton = () => {
+    let timeWithoutDestruction = 0;
+    const passTime = () => timeWithoutDestruction++;
+    const totalPeaceTime = () => timeWithoutDestruction;
+    const launch = () => {
+        timeWithoutDestruction = -1;
+        return '💥';
+    }
+
+    setInterval(passTime, 1000);
+    return { totalPeaceTime }
+}
+
+const ww3 = makeNuclearButton();
+ww3.totalPeaceTime()
+
+//There are only properties available which we return from the closure. Everything else is private to the closure itself.
