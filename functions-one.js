@@ -1,6 +1,6 @@
 //The ways to invoke functions:
 //1
-function one{
+function one() {
     return 1
 }
 one()

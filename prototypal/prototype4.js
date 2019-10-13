@@ -58,3 +58,4 @@ array.__proto__.hasOwnProperty('map')  //true
 Array.prototype   //base array
 array.__proto__   //base array
 // array.__proto__ points to Array.prototype.
+
