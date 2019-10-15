@@ -40,3 +40,9 @@ function Elf(name,weapon){
   
   If we change to an arrow function,because arrow functions are lexically scoped, it gives undefined,based on where they are written. In this case, it is on global object.
   */
+
+
+
+/*
+The only way, we can add properties to Elf object is use to 'this' keyword.
+*/
