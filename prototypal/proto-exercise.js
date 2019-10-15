@@ -16,3 +16,22 @@ new Date().lastYear()  //2018
 // If we did with arrow function, this would be lexically scope and point the function which takes this.
 
 
+//2
+//Modify .map() to print '🗺️' at the end of each item.
+// console.log([1,2,3].map())
+//1🗺️, 2🗺️, 3🗺️
+
+Array.prototype.map = function () {
+    let arr = [];
+    for (let i = 0; i < this.length; i++) {
+        arr.push((this[i] + '🗺️'))
+    }
+    return arr;
+}
+
+let arr = [1, 2, 3]
+
+
+arr.map()
+
+//Never modify existing methods
