@@ -188,8 +188,8 @@ Why useful?
 # PROTOTYPE
 
 # 4
-![Prototype 1](images/prototype1.png)
-![Prototype 2](images/prototype2.png)
+![Prototype 1](images/prototype2.png)
+![Prototype 2](images/prototype1.png)
 ![Prototype 3](images/prototype3.png)
 ![Prototype 4](images/prototype4.png)
 
