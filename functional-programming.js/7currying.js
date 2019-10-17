@@ -14,3 +14,5 @@ curriedMultiply(5)(3);
 const curriedMultiplyBy5 = curriedMultiply(5); curriedMultiplyBy5(4);
 // curriedMultiplyBy5 will remember first piece of data which is 5 forever until we finish running the program. It only runs (b)=>a*b
 //Trying to save memory
+
+// Thanks to the closure, a is remembered by b function.
