@@ -25,3 +25,5 @@ console.log(obj, updatedObj)
 
 //Creating a new function to update the name does not look memory efficient.
 // Structural Sharing: Instead of storing the entire copy, underneath the hood what happen is that only the CHANGES that were made to state will be copied. But the things that don't change in memory are actually still there.
+
+// * spread operator which will create a shallow copy (only one level deep)
