@@ -203,6 +203,41 @@ Why useful?
 
 * In composition, it is about smaller pieces that are combined to create something bigger. And if we need to add something later on, we can add another puzzle by composing things together.
 
+ ## ASYNCHRONOUS
+
+Async functions are functions that we can execute later.
+
+When JS engine sees something that is asynchronous, it send it over the web API.
+
+JS is a single threaded language that can be non-blocking. Single threaded means it has only one call stack and it can only do one thing at a time. In call stack, first in last out. Whatever is at the top the call stack gets run first then below that below until the call stack is empty.
+In order to not block the single thread, it can be asynchronous with callback functions.
+
+(Other languages are multi-thread)Deadlocks could be a problem with them.
+
+Synchronous code is executed line by line.
+
+What is the program?
+1. It has to allocate memory otherwise we would not be able to have variables.
+2. It also has to parse and execute scripts which means read and run commands.
+
+JS engine consist of two parts memory heap and call stack.
+In memory heap where memory allocation happens.
+In call stack where the code is read and executed. It tells where you are in the program.
+
+Memory Leak; we have a limited memory and memory leak happens when we have unused memory which fill up the memory heap. That's why global variables are bad.
+
+Stack Overflow is when stack is overflowing. Call stack is getting bigger and does not have enough space anymore. Recursion might cause a stack overflow.
+
+Synchronous code is predictable. We know what happens first then what happens next. But it can get slow.
+
+In order to run JS, it needs more than JS ENGINE. It needs JS RUN TIME ENVIRONMENT which is part of the browser.(included in browsers)
+
+JS run time environment have extra things on top of the engine which are WEB API, CALLBACK QUEUE and EVENT LOOP.
+
+onClick, onLoad, onDone Event listeners have callback functions. When the event happens, function start to work.
+ 
+ 
+
 ## SUMMARY
 
 * Memory heap gets cleaned up by garbage collection.
