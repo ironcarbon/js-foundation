@@ -194,8 +194,14 @@ Why useful?
 ![Prototype 4](images/prototype4.png)
 
 
+## FUNCTIONAL PROGRAMMING
+![Perfect Function](images/perfect-function.png)
 
 
+## OOP VS FP
+* Inheritance is a superclass that is extended to smaller pieces that add or overwrite things. Base class must be very general so that don;t overload the subclasses. It can easily get out of hand.
+
+* In composition, it is about smaller pieces that are combined to create something bigger. And if we need to add something later on, we can add another puzzle by composing things together.
 
 ## SUMMARY
 
