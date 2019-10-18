@@ -107,6 +107,7 @@ Promise.all(urls.map(url => {
     console.log(results[1])
     console.log(results[2])
 }).catch(() => console.log('error'))
+//Or .catch('oops)
 
   //fetch returns a promise! Adding '.then'  answers the whatever promise returns whether is result or rejects, we get to manipulate the data.
 
