@@ -104,7 +104,11 @@ JS automatically frees up the memory that we no longer use and will collect our 
 
 To write an efficient code, we have to be conscious to not have stack overflow or a memory leak and to manage that memory well.
 
+# Single Threaded
+* JS is a single threaded language which means that only one set of instructions is executed at a time. It does not do multiple things. Easy way to check that language is single threaded or not => Look how many call stack it has!
+* One call stack allow us a run code one at a time. We can not run functions in parallel. Because of this js is SYNCHRONOUS that is wanted to time in order that it appears. Only one thing can happen at the time.
 
+* alert(‘hi’) mimics the long running JS. The website is frozen in time until taking some sort of action.
 
 
 
