@@ -94,6 +94,17 @@ JS automatically frees up the memory that we no longer use and will collect our 
 
 * In JS, garbage collector freeze memory on the heap and prevents memory leaks that is when the memory gets too big until it reaches maximum size. (Mark and Sweep Algorithm)
 
+# Memory Leak: Memory is limited. Reasons of memory leak:
+1. Global Variable: Do not use too many global variables.
+2. Event Listeners: Adding event listeners and never remove them when you don’t need them.(Especially in single page applications)
+3. setInterval(() => {
+4. // referencing objects
+5. }) 
+6. —If we don’t stop setInterval, it will keep running
+
+To write an efficient code, we have to be conscious to not have stack overflow or a memory leak and to manage that memory well.
+
+
 
 
 
